@@ -1,68 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>H&A Pulizie | Pulizie professionali</title>
-<meta name="description" content="H&A Pulizie offre servizi professionali per B&B, case vacanza, uffici, condomini e appartamenti a Vaprio d'Adda, Milano e provincia.">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-:root{--ink:#171717;--gold:#b18a45;--cream:#f8f5ef;--muted:#6e6a63}
-*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-nav{display:flex;justify-content:space-between;align-items:center;padding:24px 7%;position:absolute;top:0;width:100%;z-index:2;color:white}
-.brand{font-family:"Playfair Display",serif;font-size:28px;letter-spacing:1px}.brand span{color:#e3c17e}
-nav a{color:white;text-decoration:none;margin-left:25px;font-size:14px}
-.hero{min-height:90vh;display:flex;align-items:center;padding:130px 7% 80px;color:white;background:linear-gradient(90deg,rgba(10,10,10,.82),rgba(10,10,10,.32)),url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2400&q=95') center/cover}
-.hero-content{max-width:680px}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#e3c17e;font-size:12px;font-weight:700}
-h1,h2{font-family:"Playfair Display",serif;line-height:1.12}h1{font-size:clamp(48px,7vw,88px);margin:20px 0}h2{font-size:44px;margin:12px 0 20px}
-.hero p{font-size:18px;max-width:560px;color:#eee}.btn{display:inline-block;padding:15px 24px;background:var(--gold);color:white;text-decoration:none;border-radius:2px;font-weight:700;margin-top:18px}.btn.secondary{background:transparent;border:1px solid #fff;margin-left:10px}
-section{padding:90px 7%}.intro{text-align:center;max-width:750px;margin:auto}.intro p,.service p,.contact p{color:var(--muted)}
-.services{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
-.service{background:white;padding:30px 24px;border-top:3px solid var(--gold)}.number{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:2px}
-.service h3{font-family:"Playfair Display",serif;font-size:25px;margin:15px 0 10px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about img{width:100%;height:470px;object-fit:cover;border-radius:2px;box-shadow:0 18px 45px rgba(0,0,0,.12)}.contact{background:#171717;color:white;text-align:center}.contact p{color:#d2d2d2}.contact a{color:white}.contact .btn{margin:10px}
-footer{padding:25px 7%;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
-@media(max-width:800px){nav{padding:20px 5%}nav div:last-child{display:none}.hero{padding:120px 5% 70px}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:30px}section{padding:65px 5%}h2{font-size:36px}footer{display:block;text-align:center}footer div{margin:8px}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}.btn.secondary{margin-left:0}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="H&A offre servizi di pulizia professionale per uffici, condomini, BnB e case vacanza a Milano città e provincia.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>H&A | Servizi di pulizia professionale</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Cpath d='M14 31 32 14l18 17v20H14z' fill='%23fff'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='serif' font-size='19' fill='%23000'%3EH%26A%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#0a0a0a;--paper:#fff;--mist:#f3f3f1;--line:#d8d8d4;--muted:#656565;--serif:Georgia,'Times New Roman',serif;--sans:Inter,Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6}a{color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-size:1.5rem}.brand img{width:54px;height:54px;object-fit:cover;object-position:center 25%;border-radius:50%}.navlinks{display:flex;align-items:center;gap:28px}.navlinks a{text-decoration:none;font-size:.92rem}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid var(--ink);border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;transition:.2s}.button:hover{background:#333;transform:translateY(-2px)}.button.light{background:#fff;color:#000}
+    .hero{min-height:calc(100vh - 78px);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:64px;padding:72px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800}.hero h1{font-family:var(--serif);font-size:clamp(3.2rem,7vw,7.2rem);font-weight:400;line-height:.93;letter-spacing:-.055em;margin:18px 0 28px;max-width:850px}.hero p{font-size:1.15rem;color:var(--muted);max-width:610px;margin:0 0 34px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-card{background:var(--mist);border-radius:40px;padding:32px;min-height:560px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:260px;height:260px;border:1px solid #c8c8c2;border-radius:50%;top:-80px;right:-80px}.hero-card img{width:100%;max-width:480px;mix-blend-mode:multiply}.trust{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap}.trust span{display:flex;align-items:center;gap:9px;font-size:.9rem;font-weight:700}.trust i{width:8px;height:8px;background:#111;border-radius:50%}
+    section{padding:110px 0}.section-head{display:grid;grid-template-columns:.6fr 1.4fr;gap:40px;align-items:end;margin-bottom:52px}.section-head h2{font:400 clamp(2.5rem,5vw,5rem)/1 var(--serif);letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);max-width:620px;margin:0 0 8px}
+    .services{background:var(--ink);color:#fff}.services .section-head p{color:#aaa}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid #333;border-radius:28px;padding:32px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.service:hover{background:#171717;transform:translateY(-5px)}.service .num{font:400 3rem/1 var(--serif);color:#777}.service h3{font:400 2rem/1.1 var(--serif);margin:0 0 12px}.service p{color:#aaa;margin:0}.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.quote{background:var(--mist);border-radius:36px;padding:clamp(34px,6vw,72px);font:400 clamp(2rem,4vw,4.4rem)/1.05 var(--serif);letter-spacing:-.04em}.features{display:grid;gap:28px}.feature{padding-bottom:26px;border-bottom:1px solid var(--line)}.feature h3{font-size:1.15rem;margin:0 0 6px}.feature p{color:var(--muted);margin:0}
+    .area{background:var(--mist)}.area-box{border-radius:36px;background:#fff;padding:clamp(36px,7vw,90px);display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.area h2{font:400 clamp(2.6rem,5vw,5.6rem)/1 var(--serif);letter-spacing:-.05em;margin:0 0 24px}.area p{color:var(--muted);font-size:1.1rem}.pin{width:min(280px,100%);aspect-ratio:1;margin:auto;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font:400 5rem/1 var(--serif);position:relative}.pin:after{content:"Milano e provincia";position:absolute;bottom:50px;font:700 .85rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+    .contact{text-align:center}.contact h2{font:400 clamp(3rem,7vw,7.4rem)/.96 var(--serif);letter-spacing:-.055em;margin:0 auto 28px;max-width:1050px}.contact p{color:var(--muted);max-width:650px;margin:0 auto 34px}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.contact-details{display:flex;justify-content:center;gap:18px 34px;flex-wrap:wrap;margin-top:32px}.contact-details a{font-weight:700;text-decoration:none;border-bottom:1px solid var(--ink)}
+    footer{border-top:1px solid var(--line);padding:30px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:.88rem;color:var(--muted)}
+    @media(max-width:840px){.navlinks a:not(.button){display:none}.hero{grid-template-columns:1fr;padding:55px 0}.hero-card{min-height:390px}.section-head,.why-grid,.area-box{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.service{min-height:230px}.section-head{align-items:start}.why-grid{gap:30px}.area-box{gap:25px}.pin{max-width:220px}.foot{flex-direction:column;text-align:center}section{padding:80px 0}}
+    @media(max-width:480px){.wrap{width:min(100% - 28px,1180px)}nav{height:68px}.brand{font-size:1.2rem}.brand img{width:44px;height:44px}.navlinks .button{min-height:42px;padding:0 15px;font-size:.82rem}.hero{min-height:auto}.hero h1{font-size:3.35rem}.hero-card{padding:18px;border-radius:26px;min-height:320px}.section-head{margin-bottom:34px}.service{padding:26px}.contact h2{font-size:3.3rem}}
+  </style>
 </head>
 <body>
-<nav><div class="brand">H<span>&</span>A <small style="font-family:Inter;font-size:11px;letter-spacing:2px">PULIZIE</small></div><div><a href="#servizi">Servizi</a><a href="#chi-siamo">Chi siamo</a><a href="#contatti">Contatti</a></div></nav>
-
-<header class="hero">
-<div class="hero-content">
-<div class="eyebrow">Pulizia · Cura · Professionalità</div>
-<h1>La pulizia,<br>elevata a un'arte.</h1>
-<p>Soluzioni di pulizia professionale per ambienti impeccabili, accoglienti e curati in ogni dettaglio.</p>
-<a class="btn" href="https://wa.me/393793737856?text=Buongiorno%20H%26A%20Pulizie%2C%20vorrei%20richiedere%20un%20preventivo." target="_blank">Richiedi un preventivo</a>
-<a class="btn secondary" href="#servizi">Scopri i servizi</a>
-</div>
-</header>
-
-<section id="servizi" class="services">
-<div class="intro"><div class="eyebrow">I nostri servizi</div><h2>Qualità in ogni ambiente</h2><p>Ci prendiamo cura dei tuoi spazi con attenzione, precisione e un approccio professionale.</p></div>
-<div class="grid">
-<div class="service"><div class="number">01</div><h3>B&B e case vacanza</h3><p>Ambienti pronti ad accogliere ogni ospite con ordine e pulizia.</p></div>
-<div class="service"><div class="number">02</div><h3>Uffici</h3><p>Spazi di lavoro puliti, ordinati e piacevoli ogni giorno.</p></div>
-<div class="service"><div class="number">03</div><h3>Condomini</h3><p>Cura delle aree comuni con costanza e attenzione ai dettagli.</p></div>
-<div class="service"><div class="number">04</div><h3>Appartamenti</h3><p>Pulizie pensate per rendere la tua casa più confortevole.</p></div>
-</div>
-</section>
-
-<section id="chi-siamo">
-<div class="about">
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=95" alt="Pulizia professionale">
-<div><div class="eyebrow">H&A Pulizie</div><h2>Eleganza, ordine e attenzione.</h2><p>Operiamo a Milano città e provincia, offrendo servizi di pulizia per privati e aziende.</p><p>Il nostro obiettivo è creare ambienti puliti e curati, con un servizio affidabile e orientato alle esigenze di ogni cliente.</p><a class="btn" href="#contatti">Parliamone</a></div>
-</div>
-</section>
-
-<section id="contatti" class="contact">
-<div class="intro"><div class="eyebrow">Contatti</div><h2>Il tuo spazio merita il meglio.</h2><p>Contattaci per informazioni o per richiedere un preventivo personalizzato.</p>
-<a class="btn" href="https://wa.me/393793737856?text=Buongiorno%20H%26A%20Pulizie%2C%20vorrei%20richiedere%20un%20preventivo." target="_blank">WhatsApp: 379 373 7856</a>
-<a class="btn" href="mailto:hapulizie@gmail.com">hapulizie@gmail.com</a>
-<p style="margin-top:25px">Milano città e provincia</p></div>
-</section>
-
-<footer><div>© 2026 H&A Pulizie</div><div>Professionalità in ogni dettaglio.</div></footer>
+  <header><nav class="wrap"><a class="brand" href="#inizio"><img src="logo-ha.jpeg" alt="Logo H&A"><span>H&amp;A</span></a><div class="navlinks"><a href="#servizi">Servizi</a><a href="#chi-siamo">Chi siamo</a><a href="#zona">Zona</a><a class="button" href="https://wa.me/393793737856?text=Buongiorno%2C%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20di%20pulizia." target="_blank" rel="noopener">Preventivo</a></div></nav></header>
+  <main id="inizio">
+    <section class="hero wrap"><div><div class="eyebrow">Pulizia professionale · Milano e provincia</div><h1>Ogni spazio merita di splendere.</h1><p>H&amp;A si prende cura di uffici, condomini, BnB e case vacanza con precisione, puntualità e attenzione ai dettagli.</p><div class="hero-actions"><a class="button" href="https://wa.me/393793737856?text=Buongiorno%2C%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20di%20pulizia." target="_blank" rel="noopener">Richiedi un preventivo</a><a class="button light" href="#servizi">Scopri i servizi</a></div><div class="trust"><span><i></i>Interventi su misura</span><span><i></i>Personale affidabile</span><span><i></i>Massima cura</span></div></div><div class="hero-card"><img src="logo-ha.jpeg" alt="H&A Servizi di pulizia professionale"></div></section>
+    <section class="services" id="servizi"><div class="wrap"><div class="section-head"><div class="eyebrow">I nostri servizi</div><div><h2>Pulizia pensata per ogni ambiente.</h2><p>Organizziamo ogni intervento in base agli spazi, agli orari e alle esigenze reali del cliente.</p></div></div><div class="grid"><article class="service"><div class="num">01</div><div><h3>BnB e case vacanza</h3><p>Pulizie accurate tra un soggiorno e l’altro, per accogliere ogni ospite in un ambiente impeccabile.</p></div></article><article class="service"><div class="num">02</div><div><h3>Uffici e attività</h3><p>Servizi regolari o occasionali per ambienti di lavoro ordinati, igienizzati e sempre professionali.</p></div></article><article class="service"><div class="num">03</div><div><h3>Condomini</h3><p>Cura di scale, ingressi, ascensori e spazi comuni con un programma preciso e costante.</p></div></article></div></div></section>
+    <section id="chi-siamo"><div class="wrap why-grid"><div class="quote">La qualità si vede nei dettagli. E noi non ne trascuriamo nessuno.</div><div class="features"><div class="feature"><h3>Un servizio davvero su misura</h3><p>Valutiamo gli spazi e costruiamo un piano adatto alle tue necessità.</p></div><div class="feature"><h3>Affidabilità e puntualità</h3><p>Rispettiamo gli accordi, gli orari e gli ambienti in cui lavoriamo.</p></div><div class="feature"><h3>Attenzione costante</h3><p>Controlliamo il risultato di ogni intervento per mantenere uno standard elevato.</p></div></div></div></section>
+    <section class="area" id="zona"><div class="wrap area-box"><div><div class="eyebrow">Dove lavoriamo</div><h2>Vicini a te, quando serve.</h2><p>Operiamo a Milano città e in tutta la provincia, servendo privati, strutture ricettive, uffici e condomini.</p><a class="button" href="https://wa.me/393793737856?text=Buongiorno%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20per%20un%20servizio%20di%20pulizia." target="_blank" rel="noopener">Verifica la disponibilità</a></div><div class="pin">H&amp;A</div></div></section>
+    <section class="contact" id="contatti"><div class="wrap"><div class="eyebrow">Parliamo del tuo spazio</div><h2>Pronto per un ambiente più pulito?</h2><p>Raccontaci di quale servizio hai bisogno. Ti prepareremo una proposta chiara e personalizzata, senza impegno.</p><div class="contact-actions"><a class="button" href="https://wa.me/393793737856?text=Buongiorno%2C%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20di%20pulizia." target="_blank" rel="noopener">Preventivo su WhatsApp</a><a class="button light" href="mailto:hapulizie@gmail.com?subject=Richiesta%20preventivo%20H%26A%20Pulizie">Scrivi un’e-mail</a></div><div class="contact-details"><a href="tel:+393793737856" aria-label="Chiama H&A al 379 373 7856">379 373 7856</a><a href="mailto:hapulizie@gmail.com">hapulizie@gmail.com</a></div></div></section>
+  </main>
+  <footer><div class="wrap foot"><strong>H&amp;A · Servizi di pulizia professionale</strong><span>Milano città e provincia</span><span>© <span id="year"></span> H&amp;A</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
